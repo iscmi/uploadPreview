@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_5kje8jamzdezsemi.css">
+    <link rel="stylesheet" href="js/uploadpreview/uploadpreview.css">
+    <script src="js/uploadpreview/uploadpreview.js"></script>
+</head>
+<body>
+
+<div class="filemain" id="filemain">
+
+    <span class="fileupload">
+        <input name="fileupload" class="fileinput" type="file" accept="image/jpeg,image/jpg,image/png">
+        <a class="fileupbtn">
+            <i class="iconfont icon-jiahao"></i>
+            <small>上传文件</small>
+        </a>
+    </span>
+
+</div>
+
+
+</body>
+<script>
+    $('#filemain .fileupload').uploadPreview({
+        maxUploadNum:6
+    });
+
+</script>
+</html>

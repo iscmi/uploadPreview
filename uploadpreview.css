@@ -1,0 +1,90 @@
+.filemain::after{
+    display: block;
+    height: 0;
+    content: '';
+    clear: left;
+}
+.filemain span{
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border:1px solid #c4c4c4;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 20px;
+    position: relative;
+}
+
+.filemain .fileupload{
+    margin-right: 0;
+    padding: 0;
+}
+.filemain .fileupload a:hover{
+    cursor: pointer;
+}
+
+.filemain span input{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.filemain span img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.filemain span a{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.filemain span a{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+.filemain span:hover a{
+    display: block;
+}
+.filemain span.fileupload a{
+    display: block;
+    /*background: #fafafa;*/
+}
+
+.filemain span a button{
+    display: block;
+    width: 60%;
+    height: 36px;
+    background: #cc0b0b;
+    color: #fff;
+    border:none;
+    margin: 0 auto;
+}
+.filemain span a button:hover{
+    cursor: pointer;
+}
+.filemain span a button.enlargebtn{
+    background: #00A0E9;
+    margin: 50px  auto 20px;
+}
+
+.fileupload a i,
+.fileupload a small{
+    display: block;
+    text-align: center;
+    color: #b2b2b2;
+}
+.fileupload a i{
+    font-size: 36px;
+    color: #d5d5d5;
+    line-height:1.5em;
+    margin-top: 58px;
+}
+
+.fileupload a b{
+    display: none;
+}
